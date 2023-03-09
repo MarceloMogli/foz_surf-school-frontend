@@ -1,0 +1,117 @@
+.hero-banner {
+  position: relative;
+  height: 700px; /* Set the height of the banner to fit the image */
+
+  .hero-banner__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure that the image fills the banner */
+  }
+
+  .hero-banner__content {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+    color: var(--gray-color);
+    z-index: 1; /* Set a higher z-index for the text content to appear above the image */
+    width: 400px;
+    max-width: 800px; /* Set a maximum width for the text content */
+    padding: 0 20px; /* Add padding to the text content */
+  }
+
+  .hero-banner__title {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+
+  .hero-banner__subtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .hero-banner__cta-button {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.2s ease-in-out;
+    &:hover {
+      background-color: var(--lightBlue-color);
+      color: #fff;
+    }
+  }
+
+  /* Media queries */
+  @media (max-width: 1000px) {
+    .hero-banner__content {
+      top: 40%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @media (max-width: 768px) {
+    height: 600px;
+    .hero-banner__content {
+      top: 40%;
+      left: 50%;
+      width: 80%;
+      padding: 0 40px;
+      color: var(--lightGray-color);
+    }
+    .hero-banner__title {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+    .hero-banner__subtitle {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .hero-banner__cta-button {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+    .hero-banner__image {
+      filter: brightness(60%);
+    }
+  }
+
+  @media (max-width: 480px) {
+    height: 400px;
+    .hero-banner__content {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px 0;
+    }
+    .hero-banner__title {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .hero-banner__subtitle {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .hero-banner__cta-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+
+  @media (max-width: 300px) {
+    .hero-banner__cta-button {
+      display: none;
+    }
+  }
+}

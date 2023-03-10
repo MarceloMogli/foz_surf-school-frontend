@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import headerImage from '../../assets/header-img.jpg'
 import { motion } from 'framer-motion';
 import { headerVariants } from '../../utils/motion';
-import { client, urlFor } from '../../client';
+import { client } from '../../client';
 import './Header.scss';
 
 const Header = () => {

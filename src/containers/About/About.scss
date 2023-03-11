@@ -13,7 +13,7 @@
   color: var(--secondary-color);
 }
 
-p {
+.about__p {
   text-align: justify;
   margin-bottom: 20px;
   margin-left: 30px;
@@ -39,8 +39,8 @@ svg {
 }
 
 @media (max-width: 700px) {
-    .about__p-container{
-        flex-direction: column;
-        margin-bottom: 20px;
-    }
+  .about__p-container {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
 }

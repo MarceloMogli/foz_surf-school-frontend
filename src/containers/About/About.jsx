@@ -19,7 +19,7 @@ const About = () => {
   }, [])
   
   return (
-    <section id="about">
+    <section id="About Us">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -27,13 +27,13 @@ const About = () => {
         viewport={{ once: false, amount: 0.25 }}
         className="about__container"
       >
-        <TypingText title="| About Us"
+        <TypingText title="About Us"
         />
         <motion.div className='about__p-container' variants={fadeIn('up', 'tween', 0.2, 1)}>
           <motion.div className='about__icon-container' variants={iconVariants('left')}>
             <GiSurferVan />
           </motion.div>
-          <p>
+          <p className='about__p'>
             {aboutData[0]?.overview}
           </p>
         </motion.div>
@@ -41,7 +41,7 @@ const About = () => {
           <motion.div className='about__icon-container' variants={iconVariants('left')}>
             <GiSurfBoard />
           </motion.div>
-          <p>
+          <p className='about__p'>
            {aboutData[0]?.philosophy}
           </p>
         </motion.div>

@@ -1,0 +1,24 @@
+.team__card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 10%;
+}
+
+.team__subtitle-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20%;
+}
+
+.team__subtitle {
+  font-size: 18px;
+  color: var(--gray-color);
+  font-weight: 600;
+  margin: 0 auto 20px;
+  text-align: center;
+}

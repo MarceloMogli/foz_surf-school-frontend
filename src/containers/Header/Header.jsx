@@ -18,7 +18,7 @@ const Header = () => {
   }, []);
 
   return (  
-          <section className="hero-banner">
+          <section className="hero-banner" id='Home'>
             <motion.div className="hero-banner__content">
               <motion.h1 className="hero-banner__title" variants={headerVariants} initial="hidden" animate="show">
                 {headerData[0]?.taglineBig}

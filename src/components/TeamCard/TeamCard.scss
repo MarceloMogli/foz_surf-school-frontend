@@ -9,7 +9,6 @@
   text-align: left;
   margin: 20px;
   transition: transform 0.3s ease;
-  
 
   &:hover {
     transform: translateY(-5px);
@@ -60,4 +59,5 @@
   border-radius: 4px;
   opacity: 1;
   max-width: 300px;
+  box-shadow: 0px 0px 20px rgba(166, 165, 165, 0.339);
 }

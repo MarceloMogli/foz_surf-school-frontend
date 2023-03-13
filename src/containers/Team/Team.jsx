@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { client } from '../../client'
 import { motion } from 'framer-motion';
 import { TeamCard, TypingText } from '../../components';
-import { staggerContainer } from '../../utils/motion';
-import { fadeIn } from '../../utils/motion';
+import { staggerContainer, fadeIn } from '../../utils/motion';
 
 import './Team.scss'
 
@@ -41,7 +40,10 @@ const Team = () => {
         </motion.div>
 
         <div className='team__card-container'>
-          {teamData.map((data) => <TeamCard key={data._id} headerData={data} />)}
+          {teamData.map((data) => (
+            <TeamCard key={data._id} teamData={data} />
+          )
+          )}
         </div>
       </motion.div>
     </section>

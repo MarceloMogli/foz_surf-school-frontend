@@ -18,9 +18,9 @@ const Lessons = () => {
 
   return (
     <section id='Lessons'>
-      <motion.div
+      <div
         variants={staggerContainer}
-        initial="hidden"
+        initial="show"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
         className="lessons__container"
@@ -41,7 +41,7 @@ const Lessons = () => {
         <div className='lessons__card-container'>
           {lessonsData.map((data) => <LessonsCard key={data._id} lessonData={data} />)}
         </div>
-      </motion.div>
+      </div>
     </section>
   )
 }

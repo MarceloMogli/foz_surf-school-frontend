@@ -19,7 +19,7 @@ const Navbar = () => {
             whileInView="show"
         >
             <div className="app__navbar-logo">
-                <a href="#home">
+                <a href="#Home">
                     <img src={Logo} alt="logo" />
                 </a>
             </div>

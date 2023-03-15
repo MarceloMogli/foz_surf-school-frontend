@@ -1,10 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { staggerContainer, fadeIn } from '../../utils/motion'
 import { TypingText } from '../../components'
+import { client } from '../../client'
+import RentalInfo from '../../components/RentalInfo/RentalInfo'
+
 import './Rentals.scss'
 
+
 const Rentals = () => {
+  const [rentalData, setRentalData] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "rentals"]';
+
+    client.fetch(query).then((data) => setRentalData(data))
+  }, [])
+
   return (
     <section id='Rentals'>
       <motion.div
@@ -27,6 +39,9 @@ const Rentals = () => {
             also offer wetsuits, leashes, and other surf accessories.
           </p>
         </motion.div>
+        <div className='rentals__data-container'>
+        {rentalData.map((data) => <RentalInfo key={data._id} rentalData={data} />)}
+        </div>
       </motion.div>
     </section>
   )

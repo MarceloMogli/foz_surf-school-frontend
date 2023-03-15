@@ -5,12 +5,10 @@ import { fadeIn } from '../../utils/motion';
 import './LessonsCard.scss'
 
 const LessonsCard = (lessonData) => {
-    console.log(lessonData);
-    const { details, name, numlessons, price, imgUrl, groupSize } = lessonData?.lessonData
+    const { details, name, numlessons, price, imgUrl, groupSize } = lessonData?.lessonData;
+
     return (
-        <motion.div 
-            variants={fadeIn('right', 'easeInOut', 0.5, 0.75)}
-        className="lesson__card">
+        <div className="lesson__card">
             <div className="lesson-card__image">
                 <img src={urlFor(imgUrl)} alt={name} />
             </div>
@@ -21,7 +19,7 @@ const LessonsCard = (lessonData) => {
                 <p className="lesson__card-text"><span className='lesson__span-text'>Group Size:</span> {groupSize}</p>
                 <p className="lesson__card-text"><span className='lesson__span-text'>Price:</span> {price}</p>
             </div>
-        </motion.div>
+        </div>
     )
 }
 

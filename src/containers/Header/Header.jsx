@@ -26,7 +26,7 @@ const Header = () => {
               <motion.p className="hero-banner__subtitle" variants={headerVariants} initial="hidden" animate="show">
                 {headerData[0]?.taglineSmall}
               </motion.p>
-              <motion.a href="#Lessons" className="hero-banner__cta-button" variants={headerVariants} initial="hidden" animate="show">
+              <motion.a href="#Bookings" className="hero-banner__cta-button" variants={headerVariants} initial="hidden" animate="show">
                 Book Now
               </motion.a>
             </motion.div>

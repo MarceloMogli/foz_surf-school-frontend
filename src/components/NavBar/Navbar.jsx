@@ -9,7 +9,7 @@ import './Navbar.scss';
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
-    const categories = ['Home', 'About Us', 'Team', 'Lessons', 'Rentals', 'Gallery', 'Contact Us'];
+    const categories = ['Home', 'About Us', 'Team', 'Lessons', 'Rentals', 'Gallery', 'Bookings'];
 
     return (
         <motion.nav

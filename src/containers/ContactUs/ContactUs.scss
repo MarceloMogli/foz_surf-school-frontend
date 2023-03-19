@@ -1,0 +1,110 @@
+.contact__subtitle {
+  font-size: 18px;
+  color: var(--gray-color);
+  font-weight: 600;
+  margin: 0 auto 20px;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.contact__form-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+
+  img {
+    width: 15%;
+    height: 15%;
+  }
+}
+
+.contact__call-card {
+  min-width: 290px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #fef4f5;
+  transition: all 0.3s ease-in-out;
+
+  img {
+    width: 150px;
+    height: 150px;
+    margin: 0 0.7rem;
+  }
+
+  p {
+    font-weight: 600;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+
+    &:hover{
+        color: var(--secondary-color);
+      }
+  }
+
+  &:hover {
+    box-shadow: 0 0 25px #fef4f5;
+  }
+
+}
+
+.p-text {
+  text-align: left;
+  color: var(--gray-color);
+  line-height: 1.5;
+  font-size: 1rem;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 1235px) {
+    .contact__call-card {
+        img {
+          width: 100px;
+          height: 100px;
+          margin: 0 0.7rem;
+        }
+      
+        p {
+          font-weight: 600;
+        }
+      
+        a {
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 18px;
+      
+          &:hover{
+              color: var(--secondary-color);
+            }
+        }
+      
+        &:hover {
+          box-shadow: 0 0 25px #fef4f5;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .contact__call-card {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+    }
+
+    .contact__form-wrapper {
+        flex-direction: column;
+    }
+}

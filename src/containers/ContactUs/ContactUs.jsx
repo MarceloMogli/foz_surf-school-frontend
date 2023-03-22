@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 import { staggerContainer, fadeIn } from '../../utils/motion'
 import TypingText from '../../components/TypingText/TypingText'
@@ -33,8 +33,10 @@ const ContactUs = () => {
           <motion.div className='contact__call-card' variants={fadeIn('right', 'easeInOut', 0.2, 1)}>
             <img src={ContactIcon} alt="contact phone" />
             <div className='contact__card-text'>
-              <a href="tel: +351962860648" className="p-text">
-                962 860 648
+              <label className='contact__form-subtitle'>Give Us a Call</label>
+              <br />
+              <a href="tel: +351964556778" className="p-text">
+                964 556 778
               </a>
               <br />
               <a href="tel: +351233567327" className="p-text">
@@ -43,7 +45,7 @@ const ContactUs = () => {
             </div>
           </motion.div>
           <motion.div variants={fadeIn('left', 'easeInOut', 0.1, 1)}>
-            <ContactForm  />
+            <ContactForm />
           </motion.div>
         </div>
 

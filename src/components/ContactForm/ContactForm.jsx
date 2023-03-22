@@ -42,7 +42,7 @@ const ContactForm = () => {
         <>
             {!isFormSubmitted ? (
                 <div className="contact__form-container">
-                    <label>Form</label>
+                    <label className='contact__form-subtitle'>How can we help?</label>
                     <div className="contact__form-element">
                         <input
                             className="p-text"
@@ -65,7 +65,6 @@ const ContactForm = () => {
                     </div>
                     <div className='contact__form-element'>
                         <select id="select-type" name="type" onChange={handleChangeInput}>
-                            <option value='default' disabled selected>How can we help:</option>
                             <option value='lessons'>Book a lesson</option>
                             <option value='rental'>Rent material</option>
                             <option value='info'>Make a question</option>
@@ -86,7 +85,7 @@ const ContactForm = () => {
                 </div>
             ) : (
                 <div>
-                    <h3>Thanks for getting in touch!</h3>
+                    <h3 className='thank-you-msg'>Thanks for getting in touch!</h3>
                 </div>
             )}
         </>

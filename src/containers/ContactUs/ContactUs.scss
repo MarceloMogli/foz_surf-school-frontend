@@ -48,15 +48,14 @@
     font-weight: 600;
     font-size: 20px;
 
-    &:hover{
-        color: var(--secondary-color);
-      }
+    &:hover {
+      color: var(--secondary-color);
+    }
   }
 
   &:hover {
     box-shadow: 0 0 25px #fef4f5;
   }
-
 }
 
 .p-text {
@@ -70,41 +69,48 @@
   }
 }
 
+.contact__form-subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  line-height: 2;
+}
+
 @media (max-width: 1235px) {
-    .contact__call-card {
-        img {
-          width: 100px;
-          height: 100px;
-          margin: 0 0.7rem;
-        }
-      
-        p {
-          font-weight: 600;
-        }
-      
-        a {
-          text-decoration: none;
-          font-weight: 600;
-          font-size: 18px;
-      
-          &:hover{
-              color: var(--secondary-color);
-            }
-        }
-      
-        &:hover {
-          box-shadow: 0 0 25px #fef4f5;
-        }
+  .contact__call-card {
+    img {
+      width: 100px;
+      height: 100px;
+      margin: 0 0.7rem;
     }
+
+    p {
+      font-weight: 600;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 0 25px #fef4f5;
+    }
+  }
 }
 
 @media (max-width: 700px) {
-    .contact__call-card {
-        margin: 0.5rem 0;
-        padding: 0.5rem;
-    }
+  .contact__call-card {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }
 
-    .contact__form-wrapper {
-        flex-direction: column;
-    }
+  .contact__form-wrapper {
+    flex-direction: column;
+  }
 }

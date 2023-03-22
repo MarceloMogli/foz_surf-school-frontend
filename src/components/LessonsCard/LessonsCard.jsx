@@ -1,7 +1,6 @@
 import React from 'react'
 import { urlFor } from '../../client';
-import { motion } from 'framer-motion';
-import { fadeIn } from '../../utils/motion';
+
 import './LessonsCard.scss'
 
 const LessonsCard = (lessonData) => {

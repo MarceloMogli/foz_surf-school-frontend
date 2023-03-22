@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
 import { TypingText } from '../../components'
-import { staggerContainer, fadeIn } from '../../utils/motion'
 import { client } from '../../client'
 
 import './Lessons.scss'
@@ -19,17 +17,10 @@ const Lessons = () => {
   return (
     <section id='Lessons'>
       <div
-        variants={staggerContainer}
-        initial="show"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
         className="lessons__container"
       >
         <TypingText title="Surf Lessons" />
-        <motion.div
-          className='lessons__subtitle-container'
-          variants={fadeIn('up', 'tween', 0.2, 1)}
-        >
+        <div className='lessons__subtitle-container'>
           <p className='lessons__subtitle'>
             Join our experienced instructors for an unforgettable surfing experience.
             Our surf lessons are designed for beginners who want to learn the fundamentals
@@ -37,7 +28,7 @@ const Lessons = () => {
             private or group settings. Wetsuits and surfboards are provided. Book a lesson
             today and start catching waves like a pro!
           </p>
-        </motion.div>
+        </div>
         <div className='lessons__card-container'>
           {lessonsData.map((data) => <LessonsCard key={data._id} lessonData={data} />)}
         </div>
